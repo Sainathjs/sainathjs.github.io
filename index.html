@@ -1,0 +1,283 @@
+<HTML>
+    <HEAD>
+        <TITLE>Shardula-ai</TITLE>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/mainScript.js" type="text/javascript"></script>
+        <LINK href="css/style.css" rel="stylesheet" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </HEAD>
+    <body>
+        <div id = "logoDiv">
+            <img id = "logo" onclick = "setCurrentMenu( 1 )" src = "./images/logo.png" alt = "logo"/>
+            <img id = "companyName" src = "./images/companyName.svg" alt = "Shardula-ai"/>
+        </div>
+        <div id = "menu" >
+            <ul id = "menu">
+                <li>
+                    <img id = "img_contact" src = "./images/contact_btn.svg"
+                             onmouseover = "highlight( this, 4 )" 
+                             onmouseout = "resetHighlight( this, 4 )" 
+                             onclick = "setCurrentMenu( 4 )" >
+                </li>
+                <li>
+                    <img id = "img_work" src = "./images/work_btn.svg"
+                             onmouseover = "highlight( this, 3 )" 
+                             onmouseout = "resetHighlight( this, 3 )"
+                             onclick = "setCurrentMenu( 3 )" >
+                </li>
+                <li>
+                    <img id = "img_about" src = "./images/about_btn.svg"
+                             onmouseover = "highlight( this, 2 )" 
+                             onmouseout = "resetHighlight( this, 2 )"
+                             onclick = "setCurrentMenu( 2 )" >
+                </li>
+                <li>
+                    <img id = "img_home" src = "./images/home_btn_active.svg"
+                             onmouseover = "highlight( this, 1 )" 
+                             onmouseout = "resetHighlight( this, 1 )"
+                             onclick = "setCurrentMenu( 1 )" >
+                </li>
+            </ul>
+        </div>
+
+        <div id = "content">
+            <div id = "home">
+                Shardula-ai uses computing and Artificial Intelligence to
+                connect children to their roots, Sanskrit and Sanskriti.
+                We have developed an ecosystem to enable Programming in Sanskrit. <br><br>
+
+                To get started, for the interested, a 5 hrs session spanning 3 to 10 days
+                is introduced. This enables participants to write small
+                programs in Sanskrit, resulting in simple drawings/paintings !!! <br> <br> 
+
+                We have created an app to write program which requires knowledge of any one Indian 
+                script like Devnagri, Kannada, Malayalam etc. One can learn 
+                programming here without prior experience in Sanskrit or Programming. <br><br>
+                
+                Programs written by 3 children is shared in "WORK" section.               
+            </div>
+
+            <div id = "about">
+		Shardula-ai was started in August 2020 with an aim to 
+                to empower society using the Artificial Intelligence as a tool. <br> <br>
+
+		Shardula in Sanskrit means Tiger. 
+                The tiger cub, our logo, is curious and brave to explore. <br> <br>
+                
+                We have introduced Sanskrit based programming language. 
+                As a measure of simplicity to learn this, a group of children were
+                given 10 classes spanning 30-40 minutes each.
+                And this lead them to paint cute pictures using programming !!! <br><br>
+
+                We have an app with a devnagri keyboard and this enables computing 
+                using Sanskrit using Devnagri, or a local script. <br><br>
+
+                You can apply for the app/course through CONTACT link above.
+            </div>
+
+            <div id = "work">
+
+                    <h2> Sanskrit Programming Language </h2>
+                    <p>	 A demo of various programs written in this language.  The lipi used is Devanagari in the youTube demo.  </p>
+
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/-C1XY9bNcRE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p> 
+<h3> Painting done using Sanskrit Programming Language. </h3> 
+  <img id = "house_tree_river_mountain" src = "./images/home_tree_river.png" alt = "picture" width="600" height="400" />
+<br>
+Each image like tree, house, mountain are individual programs <br>
+They are later integrated to create a complete picture / painting.<br>
+                    </p>
+                </div>
+
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/m9tpyBBxuA4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+<h3>Demo 1: Simple Instructions: Data types and data movement. </h3>
+  &ensp;3 subjects : Rama, Krishna, Lakshmana.<br>
+  &ensp;2 objects: Mango(Aamraphala) and Chocolate (Chaakaleham).<br>
+  &ensp;2 activities: Arjitavaan (Earned) and Dattavaan (Gave).<br> <b>
+Inst 1:  Raamaha Chakaleham Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned a chocolate.<br>
+     &ensp;&ensp; Running this instruction creates a Data object Ramaaha of type Raama,  <br>
+     &ensp;&ensp; And an object of type chocolate,<br>
+     &ensp;&ensp; and assigns the object to Raama.<br> <b>
+Inst 2:  Krushnaaya Ramaha Chaakaleham Dattavaan </b> <br>
+     &ensp;&ensp; This means Raama gave chocolate to Raama. <br>
+     &ensp;&ensp; Running this instruction moves chocolate from Rama to Krushna.<br> <b>
+Inst 3:  Krushnaha Raamaaya Chaakaleham Dattavaan </b> <br>
+     &ensp;&ensp; This means Krushna gave chocolate to Raama.<br>
+     &ensp;&ensp; Running this instruction moves chocolate from Krushna to Raama.<br> <b>
+Inst 4:  Lakshmanaha Aaamraphalam Arjitavaan </b> <br>
+     &ensp;&ensp; This means Lakshmana earned a mango. <br>
+     &ensp;&ensp; Running this instruction creates an object Lakmanaha of type Laksmana.<br>
+     &ensp;&ensp; and creates an object instance of type Mango.<br> <b>
+Inst 5:  Lakshmanaha Raamaya Aaamraphalam Dattavaan </b> <br>
+     &ensp;&ensp; This means Lakshmana gave the mango to Raama <br>
+     &ensp;&ensp; Running this instruction moves the mango from Laksmana to Raama.<br>
+
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/G_H2_lI-jdA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> <h3>
+Demo 2 : Mathematical Operations in Sanskrit Programming Language. </h3>
+  &ensp;2 subjects : Rama, Krishna.<br>
+  &ensp;1 objects: Chocolate (Chaakaleham).<br>
+  &ensp;2 activities: Arjitavaan (Earned) and Dattavaan (Gave).<br> <b>
+Inst 1:  Raamaha Thrini Chakalehani Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 3 chocolates.<br>
+     &ensp;&ensp; Running this instruction creates a Data object Ramaaha of type Raama,  <br>
+     &ensp;&ensp; And an object of type chocolate,<br>
+     &ensp;&ensp; and assigns the object to Raama.<br> <b>
+Inst 2: Raamaha Dwou Chaakalehou Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 2 chocolates.<br>
+     &ensp;&ensp; This makes Raama own 2 more chocolates. Hence 5 chocolates totally. <br><b>
+Inst 3: Krushnaaya Raamaha Chaakaleham Dattavaan. </b> <br>
+     &ensp;&ensp; This means Krushna gave (a) chocolate to Raama.<br>
+     &ensp;&ensp; This makes Krushna own 1 chocolate and Raama 4. <br>
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/TCC-cDgiIe8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+<h3>Demo 3: If Else Condition in Sanskrit Programming Language. </h3>
+  &ensp;2 subjects : Rama, Krishna.<br>
+  &ensp;1 objects: Chocolate (Chaakaleham).<br>
+  &ensp;2 activities: Arjitavaan (Earned) and Dattavaan (Gave).<br> <b>
+Inst 1:  Raamaha Thrini Chakalehani Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 3 chocolates.<br>
+     &ensp;&ensp; Running this instruction creates a Data object Ramaaha of type Raama,  <br>
+     &ensp;&ensp; And three objects of type chocolate,<br>
+     &ensp;&ensp; and assigns the objects to Raama.<br> <b>
+Inst 2: Yadi Raamasya Chaakaleham Asti, Tarhi Raamaha Krushnaaya Chaakaleham Dadaati </b> <br>
+     &ensp;&ensp; This means if Raama has 3 chocolates. <br>
+     &ensp;&ensp; then Raama would give one chocolate to Krushna <br>
+     &ensp;&ensp; Running this instruction caused Raama to give one chocolate to Krushna <br>
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/R9T34gQhlB8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+<h3>Demo 4 : If Else condition in True and False case in Sanskrit Programming Language. </h3>
+  &ensp;2 subjects : Rama, Krishna.<br>
+  &ensp;1 objects: Chocolate (Chaakaleham).<br>
+  &ensp;2 activities: Arjitavaan (Earned) and Dattavaan (Gave).<br> <b>
+Inst 1:  Raamaha Thrini Chakalehaani Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 3 chocolates.<br>
+     &ensp;&ensp; Running this instruction creates a Data object Ramaaha of type Raama,  <br>
+     &ensp;&ensp; And three objects of type chocolate,<br>
+     &ensp;&ensp; and assigns the objects to Raama.<br> <b>
+Inst 2: Yadi Raamasya Thrini Chaakalehaani Santi, Tarhi Raamaha Krushnaaya Chaakaleham Dadaati </b> <br>
+     &ensp;&ensp; This means if Raama has 3 chocolates. <br>
+     &ensp;&ensp; then Raama would give one chocolate to Krushna <br>
+     &ensp;&ensp; Running this instruction caused Raama to give one chocolate to Krushna <br>
+     &ensp;&ensp; And then Raama would end up having only two chocolates <br> <b>
+Inst 3: Yadi Raamasya Thrini Chaakalehaani Santi, Tarhi Raamaha Krushnaaya Chaakaleham Dadaati </b> <br>
+     &ensp;&ensp; This means if Raama has 3 chocolates. <br>
+     &ensp;&ensp; then Raama would give one chocolate to Krushna <br>
+     &ensp;&ensp; Running this instruction caused Raama to NOT give chocolate to Krushna <br>
+     &ensp;&ensp; This is because Raama does NOT have 3 chocolates in the first place <br> 
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/1bWuPJbSXwo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> 
+<h3>Demo 5 : If Not condition. </h3>
+  &ensp;2 subjects : Rama, Krishna. <br>
+  &ensp;2 objects: Chocolate (Chaakaleham), Mango (Aamraphalam). <br>
+  &ensp;2 activities: Arjitavaan (Earned) and Dattavaan (Gave). <br> <b>
+Inst 1:  Raamaha Thrini Chakalehaani Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 3 chocolates.<br>
+     &ensp;&ensp; Running this instruction creates a Data object Ramaaha of type Raama,  <br>
+     &ensp;&ensp; And three objects of type chocolate,<br>
+     &ensp;&ensp; and assigns the objects to Raama.<br> <b>
+Inst 2:  Krishnaha Aamraphalam Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Krishna earned a mango. <br> <b>
+Inst 3: Yadi Krishnasya Chaakalehaani Naasti, Tarhi Raamaha Krushnaaya Chaakaleham Dadaati </b> <br>
+     &ensp;&ensp; This means if Krishna does not have a chocolate. <br>
+     &ensp;&ensp; then Raama would give one chocolate to Krushna <br>
+     &ensp;&ensp; Running this instruction caused Raama to give one chocolate to Krushna <br>
+     &ensp;&ensp; And then Raama would end up having only two chocolates <br> 
+     &ensp;&ensp; And Krishna to have a Mango and a choloclate <br>
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/cQ-aBDcG7-s" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+<h3>Demo 6: Function call in Sanskrit Programming Language. </h3>
+  &ensp;2 subjects : Rama, Krishna. <br>
+  &ensp;2 objects: Chocolate (Chaakaleham), Mango (Aamraphalam). <br>
+  &ensp;2 activities: Arjitavaan (Earned) , Dattavaan (Gave), Katotu (Execute). <br> <b>
+Inst 1:  Atha Adhyaaya Adhyaaya_1 Prarambha. </b> <br>
+     &ensp;&ensp; This means a function with name Adhyaaya_1 starts. <br>
+     &ensp;&ensp; This is similar to start of function definition.  <br> <b>
+Inst 2:  Raamaha thrini chaakaleehani Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 3 chocolates. <br> <b>
+Inst 3:  Krishnaha Aamraphalam Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Krishna earned a mango. <br> <b>
+Inst 4: Yadi Krishnasya Chaakalehaani Naasti, Tarhi Raamaha Krushnaaya Chaakaleham Dadaati </b> <br>
+     &ensp;&ensp; This means if Krishna does not have a chocolate. <br>
+     &ensp;&ensp; then Raama would give one chocolate to Krushna <br>
+     &ensp;&ensp; Running this instruction caused Raama to give one chocolate to Krushna <br>
+     &ensp;&ensp; And then Raama would end up having only two chocolates <br> 
+     &ensp;&ensp; And Krishna to have a Mango and a choloclate <br> <b>
+Inst 5:  Adhyaaya Adhyaaya_1 Samaaptham. </b> <br>
+     &ensp;&ensp; This means the function with name Adhyaaya_1 finished. <br>
+     &ensp;&ensp; This is similar to end of function definition.  <br> <b>
+Inst 6:  Adhyaaya_1 Karootu. </b> <br>
+     &ensp;&ensp; This means call the function with the name Adhyaaya_1. <br> <b>
+Inst 7:  Adhyaaya_1 Karootu. </b> <br>
+     &ensp;&ensp; This is a second call to function with the name Adhyaaya_1. <br>
+     &ensp;&ensp; You would see a different execution flow for Inst4 if Adhyaaya_1 function. <br>
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/TiqwKO5DurY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> 
+<h3>Demo 7: Spatial concept of an object. </h3>
+  &ensp;2 subjects : Rama, Lakshmana. <br>
+  &ensp;4 locations: Uttara(North), Agneya(South-East), Dakshina(South), Eeshanya(North-East). <br>
+  &ensp;2 activities: Vasati (resides) , Gacchati (Goes). <br> <b>
+Inst 1:  Raamaha Uttarey Vasati. </b> <br>
+     &ensp;&ensp; This means Raama resides in North. <br><b>
+Inst 2:  Raamaha Uttaraat Agneyey Gacchati. </b> <br>
+     &ensp;&ensp; This means Raama goes from North to South-East. <br><b>
+Inst 3:  Laksmanaha Dakshinaat Eeshanye Gacchati. </b> <br>
+     &ensp;&ensp; This means Lakshmana goes from South to North-East. <br>
+                    </p>
+                </div>
+                <div class = "youtube_link">
+                    <iframe src="https://www.youtube.com/embed/BSwt4Ih2W3E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> 
+<h3>Demo 8: Temporal concept of an object. </h3>
+  &ensp;1 subject : Rama. <br>
+  &ensp;4 locations: Uttara(North), Agneya(South-East), Dakshina(South), Eeshanya(North-East). <br>
+  &ensp;2 activities: Vasati (resides) , Gacchati (Goes). <br> <b>
+Inst 1:  Raamaha thrini chaakaleehani Arjitavaan. </b> <br>
+     &ensp;&ensp; This means Raama earned 3 chocolates. <br> <b>
+Inst 2: Raamaha Dwou Chaakalehou Khaditavaan. </b> <br>
+     &ensp;&ensp; This means Raama ate 2 chocolates.<br>
+     &ensp;&ensp; This makes Raama have 1 chocolate only. <br>
+                    </p>
+                </div>
+            </div>
+            
+            <div id = "contact_div">
+                <div id = "sendMessage">
+                    <input type = name class = "sendMessage" placeholder = "Name [REQUIRED]" id = "name">
+                    <input type = email class = "sendMessage" placeholder = "Email [REQUIRED]" id = "email">
+                    <input type = tel class = "sendMessage" placeholder = "Phone number" id = "phone" pattern="[0-9]{10}" >
+                    <textarea id = "message" name = "message" ></textarea>
+                    <input type = button id = "sendMessage" onclick = "sendMessage()" value = "Send Message">
+                    <label id = "messageSentInfo"></label>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            setCurrentMenu( 1 );
+        </script>
+    </body>
+</HTML>
